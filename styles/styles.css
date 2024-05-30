@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter",  sans-serif;
+    text-decoration: none;
+}
+
+/* header section */
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: Space-between;
+    margin: 0;
+    background-color: #fff;
+    position: relative;
+    padding: 0px 80px;
+    z-index: 100;
+    box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 250;
+}
+
+/* creating my custom longer */
+.cssLogo{
+    display: flex;
+    width: 20%;
+    z-index: -3;
+}
+
+.container{
+    display: flex;
+    width: 26%;
+    height: 80%;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+    z-index: -1;
+}
+
+
+.shape1 {
+    position: relative;
+    width: 31px;
+    height: 51px;
+    background:#F74A0D;
+    border-radius: 82% 18% 63% 37% / 72% 0% 100% 28% ;
+}
+
+.shape1 .inner{
+    position: relative;
+    width: 28px;
+    height: 51px;
+    background:#fff;
+    border-radius: 82% 18% 63% 37% / 72% 0% 100% 28%  ;
+    left: 3.5px;
+    top: -2px;
+}
+
+
+.shape2 {
+    position: relative;
+    width: 31px;
+    height: 50px;
+    background:#F74A0D;
+    border-radius: 82% 18% 63% 37% / 72% 0% 100% 28% ;
+    transform: rotate(188deg);
+    top: -20px;
+    left: 10px;
+
+}
+.shape2 .inner2 {
+    position: relative;
+    width: 28px;
+    height: 50px;
+    background:#fff;
+    border-radius: 82% 18% 63% 37% / 72% 0% 100% 28%  ;
+    left: 3px;
+    top: -3px;
+}
+
+.container .inner3 {
+    position: absolute;
+    width: 19px;
+    height: 30px;
+    background: #fff;
+    top: 48.2%;
+    left: 5px;
+    transform: rotate(218deg);
+    border-bottom-right-radius: 10px;
+
+}
+
+.container .line {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background: #fff;
+    top: 38%;
+    left: 20px;
+    transform: rotate(120deg);
+    z-index: 100;
+}
+
+
+.cssLogo .logoName {
+    position: absolute;
+    left: 123px;
+    padding-top: 30px;
+    width: 76%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.cssLogo .logoName h5{
+    background: linear-gradient(to bottom, #F7AC08, #F65A0D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+.cssLogo .logoName span{
+    font-size: 10.5px;
+    width: 100%;
+    font-size: 700;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* navBar section */
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header nav span a{
+        color: #232323;
+        font-size: 16px;
+        font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li,
+header nav ul li a {
+    list-style: none; 
+    font-size: 16px;
+    font-weight: 500;
+    color: #232323;
+}
+header ul li i {
+    font-size: 8px;
+}
+
+header nav .signIn,
+header nav .signUp {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #F7AC08, #F65A0D);
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+header nav .signUp {
+    background: #000;
+}
+
+/* section 1 */
+
+.section1 {
+    background: #F1F1F1;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+}
+.section1 .circle-div{
+    position: relative;
+    width: 50%;
+}
+.section1 .circle-div .circle-cnt {
+    position: absolute;
+    top: 90px;
+    width: 400px;
+    height: 400px;
+}
+
+.section1 .circle-div .circle-cnt .circle1,
+.section1 .circle-div .circle-cnt .circle1 .circle2,
+.section1 .circle-div .circle-cnt .circle1 .circle2 .circle3{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(32, 180, 134, 0.125);
+    border-radius: 50%;
+    padding: 30px;
+}
+.section1 .circle-div .circle-cnt .circle1 .circle2 .circle3{
+    padding: 40px;
+}
+.section1 .circle-div .circle-cnt .circle1 .circle2 .circle3 .circle4 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(32, 180, 134, 0.125);
+    border-radius: 50%;
+}
+.section1 .circle-div .circle-cnt .circle1::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:#7F56D9;
+    left: 80px;
+    transform: rotate(-180deg);
+}
+
+.section1 .circle-div .content {
+    position: absolute;
+    top: 135px;
+    left: 115px;
+    z-index: 100;
+}
+.section1 .circle-div .content .h2 {
+    display: flex;
+    width: 400px;
+
+}
+
+.section1 .circle-div .content .h2 h1 {
+    font-weight: 700;
+    line-height: 3.8rem;
+    font-size: 3.1rem;
+    color:#101828;
+}
+.section1 .circle-div .content .h2 h1 .highlight {
+    color: #F65A0D;
+}
+
+.section1 .circle-div .content p{
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #646464;
+    width: 500px;
+
+}
+.section1 .circle-div .content .icon {
+    display: flex;
+    margin-top: 12px;
+    width: 600px;
+    justify-content: space-between;
+}
+.section1 .circle-div .content .icon span i{
+    color: #F65A0D;
+    font-size: 2.8rem;
+    font-weight: 100;
+}
+
+.section1 .circle-div .content .icon span .rotate {
+    transform: rotate(90deg);
+    color: #F65A0D;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.section1 .circle-div .content .icon span {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    /*color: #101828;*/
+    color: #1D2939B2;
+}
+
+.section1 .circle-div .content .icon .colorDiff {
+    color: #F65A0D;
+    font-weight: 700;
+}
+
+.section1 .content1 {
+    width: 47%;
+    height: 100%;
+    padding-left: 80px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.section1 .content1 .cntCircle {
+    width: 460px;
+    height: 460px;
+    border: 0.76px solid #F65D0D;
+    border-radius: 50%;
+    position: relative;
+}
+
+.section1 .content1 .cntCircle::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #F8B508, #F6520E);
+    border-radius: 50%;
+    top: 20px;
+    right: 0px;
+}
+
+.section1 .content1 .cntCircle::before {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    background: linear-gradient(to right, #F8B508, #F6520E);
+    border-radius: 50%;
+    bottom: -10px;
+    left: 70px;
+}
+
+.section1 .content1 .cntCircle .c1 {
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    border: 0.76px solid #F65B0D;
+    background-image: url("./images/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 20px;
+    top: 20px;
+    z-index: 100;
+}
+
+.section1 .content1  .sc{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(171.54deg, #FED19C 6.47%, #DEB483 156.12%);
+    border-radius: 50%;
+    top: 280px;
+    right: 75px;
+}
+
+.section1 .content1 .box1,
+.section1 .content1 .box2 {
+    position: absolute;
+    width: 177px;
+    height: 86px;
+    border: 0.76px solid #F7A409;
+    background: #F5F5F4;
+    border-radius: 18px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section1 .content1 .box1 {
+    top: 43%;
+    z-index: 200;
+    right: 35%;
+}
+
+.section1 .content1 .box2 {
+    bottom: 18%;
+    z-index: 200;
+    right: 7%;
+    
+}
+
+.section1 .content1 .box1 span,
+.section1 .content1 .box2 span {
+    width: 50%;
+    font-size: 16px;
+    color: #838383;
+    font-weight: 400;
+}
+
+.section1 .content1 .box1 .img,
+.section1 .content1 .box2 .img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #F8B508, #F6520E);
+}
+.section1 .content1 .box1 .img img ,
+.section1 .content1 .box2 .img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* section 2 */
+.section2, .section3 {
+    width: 100%;
+    display: flex;
+    padding: 70px 120px;
+    min-height: 600px;
+    justify-content: space-between;
+    background: #FFF;
+}
+.section3 {
+    padding: 0px 120px;
+}
+
+.section2 .part1 {
+    width: 50%;
+    border-radius: 10px;
+    background-image: url("./images/img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-right: 130px;
+}
+
+.section2 .part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.section2  .part2 h3 , .section3 .pt1 h3{
+    width: 100%;
+    color: #101828;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+.section3 .pt1 h3 {
+    text-align: right;
+}
+
+.section2 .part2 ul , .section3 .pt1 ul{
+    width: 100%;
+    padding-top: 10px;
+    list-style: none;
+}
+.section3 .pt1 ul {
+    text-align: right;
+}
+.section2 .part2 ul li,
+.section3 .pt1 ul li {
+    position: relative;
+    font-size: 16px;
+    padding: 10px 0px;
+    color: #646464;
+    padding-right: 20px;
+}
+
+.section2 .part2 ul li{
+    padding-right: 0;
+    padding-left: 20px;
+}
+.section2 .part2 ul li::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #656565;
+    border-radius: 50%;
+    top: 40%;
+    left: 0px;
+}
+.section3 .pt1 ul li::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #656565;
+    border-radius: 50%;
+    top: 40%;
+    right: -0px;
+}
+
+.section2 .part2 .btns, .section3 .pt1 .btn-c {
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.section3 .pt1 .btn-c {
+    width: 95%;
+}
+
+.section2 .part2 .btns .btnL,
+.section2 .part2 .btns .btnS,
+.section3 .pt1 .btn-c .btn-L,
+.section3 .pt1 .btn-c .btnF {
+    width: 245px;
+    height: 60px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #F8B508 0%, #F6520E 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+}
+.section2 .part2 .btns .btSm,
+.section3 .pt1 .btn-c .btn-L .btn-S {
+    display:flex;
+    align-items: center;
+    width: 59px;
+    height: 25px;
+    position: absolute;
+    background: #F4EBFF;
+    top: 1px;
+    right: 3px;
+    color: #232323;
+    font-size: 12px;
+    justify-content: center;
+    border-top-right-radius: 10px;
+}
+.section2 .part2 .btns .btnS,
+.section3 .pt1 .btn-c .btnF {
+    width: 178px;
+    height: 60px;
+    border-radius: 7px;
+    background: #232323;
+    font-weight: 500;
+    font-size: 16px;
+}
+.section3 .pt2 {
+    width: 50%;
+    border-radius: 10px;
+    background-image: url("./images/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+/* section 4 */
+
+.section3 .pt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 40px;
+    margin-left: 100px;
+    width: 45%;
+}
+
+.section2 .part2 .text,
+.section3 .pt1 .text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #F65A0D;
+    line-height: 60px;
+}
+
+.section4 {
+    display: flex;
+    padding: 40px 80px;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    background: #F1F1F1;
+
+}
+
+.section4 .sct1 {
+    height: 90%;
+    width: 40%;
+    padding: 80px 20px;
+    background: linear-gradient(90deg, #F8B508 0%, #F6520E 100%);
+    border-radius: 10px;
+    color: #fff;
+    margin-right: 10px;
+    text-align:center;
+}
+.section4 .sct1 span {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.section4 .sct1  h3 {
+    font-size: 2rem;
+}
+.section4 .sct2 {
+    width: 70%;
+    font-size: 16px;
+    background: #fff;
+    padding: 15px 20px 10px 20px;
+    line-height: 25px;
+    border-radius: 10px;
+    color: #646464;
+}
+.section4 .sct2 p {
+    padding-bottom: 4px;
+}
+.section4 .sct2 a {
+    float: right;
+    color: #F65F0D;
+    font-weight: 600;
+    font-size: 1.2rem; 
+}
+
+.section5 {
+    width: 100%;
+    min-height: 550px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    text-align: center;
+}
+.section5 h3 {
+    width: 60%;
+    line-height: 32px;
+    font-size: 1.5rem;
+    color: #101828;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.section5 span {
+    color: #646464;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 35px;
+    padding-bottom: 10px;
+}
+
+.section5 p {
+    width: 63%;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color:#646464;
+}
+.section5 h6 {
+    font-size: 16px;
+    line-height:40px;
+    color: #000;
+    font-weight: 700;
+}
+
+.section5 .lg {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0px;
+}
+
+.section5 .lg img {
+    width: 45%;
+    margin-right: 50%;
+}
+
+.section5 .lg div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 400px;
+    position: absolute;
+    top: 84px;
+    right: 50px;
+    left: 200px;
+}
+.section5 .lg div h3 {
+    width:300px;
+    font-size: 2rem;
+    line-height: 10px;
+    color: #101828;
+    text-align: start;
+}
+
+.section5 .lg div span {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    text-align: start;
+}
+
+.section6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F1F1F1;
+    height: 577px;
+}
+.section6 img {
+    width: 35%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 390px;
+    background: #101828;
+    padding: 40px 120px;
+    
+}
+
+footer .top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 65%;
+    gap: 60px;
+}
+
+footer .top .carrier {
+    width: 29%;
+}
+
+/* creating my custom logo for footer */
+.flogo {
+    display: flex;
+    z-index: 100;
+    width: 63%;
+    margin-bottom: 50px;
+}
+
+.flogo .container1{
+    display: flex;
+    width: 26%;
+    height: 80%;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+    z-index: 100;
+}
+
+.shape12 {
+    position: relative;
+    width: 31px;
+    height: 51px;
+    background:#F74A0D;
+    border-radius: 82% 18% 63% 37% / 72% 0% 100% 28% ;
+}
+
+.shape12 .inner1{
+    position: relative;
+    width: 28px;
+    height: 51px;
+    background:#101828;
+    border-radius: 82% 18% 63% 37% / 72% 0% 100% 28%;
+    left: 3.5px;
+    top: -2px;
+}
+
+.shape21 {
+    position: relative;
+    width: 31px;
+    height: 50px;
+    background:#F74A0D;
+    border-radius: 82% 18% 63% 37% / 72% 0% 100% 28%;
+    transform: rotate(188deg);
+    top: -20px;
+    left: 10px;
+
+}
+
+.shape21 .inner21 {
+    position: relative;
+    width: 28px;
+    height: 50px;
+    background:#101828;
+    border-radius: 82% 18% 63% 37% / 72% 0% 100% 28%;
+    left: 3px;
+    top: -3px;
+}
+
+.container1 .inner31 {
+    position: absolute;
+    width: 19px;
+    height: 30px;
+    background: #101828;
+    top: 48.2%;
+    left: 5px;
+    transform: rotate(218deg);
+    border-bottom-right-radius: 10px;
+
+}
+.container1 .line1 {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background: #101828;
+    top: 38%;
+    left: 20px;
+    transform: rotate(120deg);
+    z-index: 100;
+}
+.flogo .logoName1 {
+    padding-top: 30px;
+    width: 100%;
+    font-family: 'League Spartan', sans-serif;
+}
+.flogo .logoName1 h5{
+    background: linear-gradient(to bottom, #F7AC08, #F65A0D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.flogo .logoName1 span{
+    font-size: 10.5px;
+    width: 100%;
+    color: #EAECF0;
+    font-size: 11px; 
+    font-weight: 700;
+    font-family: 'League Spartan', sans-serif;
+}
+
+footer .top .carrier .sp {
+    color: #EAECF0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+footer .top .entre ,
+footer .top .start ,
+footer .top .Exam ,
+footer .top .abt {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .top .entre span,
+footer .top .start span,
+footer .top .Exam span,
+footer .top .abt span {
+    display: block;
+    font-size: 14px; 
+    color: #98A2B3;
+    font-weight: 600;
+    line-height: 45px;
+}
+footer .top .entre a,
+footer .top .start a,
+footer .top .Exam a,
+footer .top .abt a{
+    font-size: 16px;
+    color:#EAECF0;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+footer .bottom span {
+    font-size: 16px;
+    color: #98A2B3;
+}
+footer .bottom .icx {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    font-size: 2rem;
+    color:#98A2B3;
+    cursor: pointer;
+}
+
+
+
